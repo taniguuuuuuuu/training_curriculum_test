@@ -36,9 +36,6 @@ class CalendarsController < ApplicationController
         today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
       wday_num = target_date.wday
-      if 
-        wday_num = wday_num -7
-      end
       days = {
       month: target_date.month,
       date: target_date.day,
